@@ -6,9 +6,30 @@ Vue.component('Home', {
     }
   },
   template: `
-	<div class="home">
-		<h1><strong>{{ giant }}</strong></h1>
-		<h1>{{ title }}</h1>
+	<div class="div-component home">
+		<div class="header">
+			<img class="headerItem image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Carrier.svg/800px-Carrier.svg.png" />
+			<h2 class="headerItem name">PatoGordo</h2>
+			<p class="headerItem description">Hello, I am the Pato Gordo a web developer.</p>
+		</div>
+		<Card name="My github" description="There are some repositories with my open source projects." redirect="https://github.com/PatoGordo" />
+		<Card name="My repl.it" description="I use this Web Code Editor to create and test my projects." redirect="https://repl.it/@PatoGordo/" />
+		<Card name="My skills" description="I'll show you tools, languages, frameworks and other things that I use in my projects." redirect="/#/skills" />
+		
+		<div class="footer">
+			<a href="https://github.com/PatoGordo" target="_blank" rel="noopener noreferrer" class="footerItem">
+				<i class="fab fa-github"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/icaro-miguel-0879521bb/" target="_blank" rel="noopener noreferrer" class="footerItem">
+				<i class="fab fa-linkedin-in"></i>
+			</a>
+			<a href="https://t.me/PatoGordo" target="_blank" rel="noopener noreferrer" class="footerItem">
+				<i class="fab fa-telegram"></i>          
+			</a>
+			<a href="https://twitter.com/patogordoo" target="_blank" rel="noopener noreferrer" class="footerItem">
+				<i class="fab fa-twitter"></i>
+			</a>
+		</div>
 	</div>`
 })
 

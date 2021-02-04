@@ -1,4 +1,4 @@
-Vue.component('About', {
+Vue.component('Contacts', {
   data: function () {
     return {
 			
@@ -8,14 +8,14 @@ Vue.component('About', {
 		
 	},
   template: `
-	<div class="div-component about">
-		About
+	<div class="div-component contacts">
+		Contacts
 	</div>
 	`
 })
 
-const About = {
+const Contacts = {
 	template:`
-		<About />
+		<Contacts />
 	`
 }

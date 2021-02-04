@@ -1,6 +1,9 @@
 const routes = [
   { path: '/', component: Home },
-  { path: '/about', component: About }
+  { path: '/about', component: About },
+  { path: '/skills', component: Skills },
+  { path: '/projects', component: Projects },
+  { path: '/contacts', component: Contacts }
 ]
 
 const router = new VueRouter({
@@ -15,11 +18,7 @@ const app = new Vue({
 	},
 	template: `
 		<div id="app">
-			<p class="navbar">
-				<router-link to="/" class="navbar-item title">Vue Router 🚀</router-link>
-				<router-link to="/" class="navbar-item">Home</router-link>
-				<router-link to="/about" class="navbar-item">About</router-link>
-			</p>
+			<app-navbar />
 			<router-view></router-view>
 		</div>
 	`
