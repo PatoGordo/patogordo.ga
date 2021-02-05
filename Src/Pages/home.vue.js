@@ -1,19 +1,21 @@
 Vue.component('Home', {
   data: function () {
     return {
-			giant: "HOME",
-      title: "Welcome to the home page"
+			title: 'PatoGrdo - Home'
     }
   },
+	created(){
+		document.title = this.title
+	},
   template: `
 	<div class="div-component home">
 		<div class="header">
 			<img class="headerItem image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Carrier.svg/800px-Carrier.svg.png" />
-			<h2 class="headerItem name">PatoGordo</h2>
-			<p class="headerItem description">Hello, I am the Pato Gordo a web developer.</p>
+			<h2 class="headerItem name">Pato Gordo</h2>
+			<p class="headerItem description">Hello, I am the Pato Gordo a beginner FullStack Web Developer.</p>
 		</div>
-		<Card name="My github" description="There are some repositories with my open source projects." redirect="https://github.com/PatoGordo" />
-		<Card name="My repl.it" description="I use this Web Code Editor to create and test my projects." redirect="https://repl.it/@PatoGordo/" />
+		<Card name="My github" target="_blank" rel="noopener noreferrer" description="There are some repositories with my open source projects." redirect="https://github.com/PatoGordo" />
+		<Card name="My repl.it" target="_blank" rel="noopener noreferrer" description="I use this Web Code Editor to create and test my projects." redirect="https://repl.it/@PatoGordo/" />
 		<Card name="My skills" description="I'll show you tools, languages, frameworks and other things that I use in my projects." redirect="/#/skills" />
 		
 		<div class="footer">

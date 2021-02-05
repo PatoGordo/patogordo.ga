@@ -1,6 +1,6 @@
 body{
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 }
 #app{
 	width: 100%;
@@ -14,4 +14,7 @@ body{
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+}
+textarea {
+  resize: none;
 }

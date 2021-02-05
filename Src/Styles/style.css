@@ -1,10 +1,15 @@
-/* External fonts */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-/* External presets */
+
+/* Presets */
 @import url('https://patogordo.ga/Styles/presets.css');
-/* Internal presets */
 @import url('preset.css');
+
 /* Component styles */
-@import url('ComponentStyles/navbar.css');
-@import url('ComponentStyles/home.css');
-@import url('ComponentStyles/skills.css');
+@import url('ComponentStyles/Components/navbar.css');
+
+/* Pages styles */
+@import url('ComponentStyles/Pages/home.css');
+@import url('ComponentStyles/Pages/skills.css');
+@import url('ComponentStyles/Pages/about.css');
+@import url('ComponentStyles/Pages/contacts.css');

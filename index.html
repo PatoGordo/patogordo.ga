@@ -3,15 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PatoGordo</title>
+		<link rel="shortcut icon" href="Src/Images/duck.png" type="image/x-icon">
+		
+		<title>PatoGordo</title>
 
 		<!-- Styles -->
     <link href="Src/Styles/style.css" rel="stylesheet" type="text/css" />
 
-		<!-- External Scripts -->
+		<!-- External Modules -->
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" type="text/css" />
+		<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 		<script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+		
+		<!-- Firebase -->
+		<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
+		<script src="Src/Services/firebase.js"></script>
 		
 		<!-- Web site Worker -->
 		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -22,15 +31,15 @@
 			Loading...
 		</div>
 
-		
 		<!-- Project Components -->
 		<script src="Src/Components/components.vue.js"></script>
+		<script src="Src/Components/navbar.vue.js"></script>
+		<script src="Src/Components/cards.vue.js"></script>
 
 		<!-- Pages Components -->
 		<script src="Src/Pages/home.vue.js"></script>
 		<script src="Src/Pages/about.vue.js"></script>
 		<script src="Src/Pages/skills.vue.js"></script>
-		<script src="Src/Pages/projects.vue.js"></script>
 		<script src="Src/Pages/contacts.vue.js"></script>
 
 		<!-- App/Router Component -->
