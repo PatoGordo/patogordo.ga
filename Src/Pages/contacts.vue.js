@@ -60,7 +60,7 @@ Vue.component('Contacts', {
 
 			<label class="input-label">
 				<ion-icon class="input-icon" name="chatbox-ellipses-outline" style="-webkit-transform: scaleX(-1); transform: scaleX(-1);"></ion-icon>
-				<textarea class="input-box" v-model="contact.message" cols="30" rows="7" placeholder="Your message"></textarea>
+				<textarea class="input-box" v-model="contact.message" cols="30" rows="7" placeholder="Your message..."></textarea>
 			</label>
 
 			<button class="form-submit" :disabled="buttonState"><ion-icon name="send-outline"></ion-icon></button>
