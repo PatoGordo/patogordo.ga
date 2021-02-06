@@ -3,7 +3,7 @@ Vue.component('Contacts', {
     return {
 			title: 'PatoGordo - Contacts',
 			buttonState: false,
-			returnMessage: 'Fill out the form below and click on "Send Message"!',
+			returnMessage: 'Fill out the form below and click on "Send Contact"!',
 			returnMessageClass: 'warn',
 			contact:{
 				name: '',
@@ -29,7 +29,7 @@ Vue.component('Contacts', {
 				this.returnMessageClass = 'success'
 				setTimeout(() => { 
 					this.returnMessageClass = 'warn'
-					this.returnMessage = 'Fill out the form below and click on "Send Message"!'
+					this.returnMessage = 'Fill out the form below and click on "Send Contact"!'
 				}, 4000)
 			})
 			.catch(() => {
@@ -38,7 +38,7 @@ Vue.component('Contacts', {
 				this.returnMessageClass = 'error'
 				setTimeout(() => { 
 					this.returnMessageClass = 'warn'
-					this.returnMessage = 'Fill out the form below and click on "Send Message"!'
+					this.returnMessage = 'Fill out the form below and click on "Send Contact"!'
 				}, 4000)
 			})
 		}
