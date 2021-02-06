@@ -8,7 +8,8 @@ Vue.component('Contacts', {
 			contact:{
 				name: '',
 				email: '',
-				message: ''
+				message: '',
+				id: ''
 			}
     }		
   },
@@ -17,10 +18,10 @@ Vue.component('Contacts', {
 	},
 	methods:{
 		sendMessage(){
+			this.contact.id =  '#'+Math.floor(1000 + Math.random() * 9000)
 			this.buttonState = true
-			contactRef.doc(this.contact.email).set(this.contact)
+			contactRef.doc(this.contact.email + ' ' + this.contact.id).set(this.contact)
 			.then(() => {
-				console.log("Data added")
 				this.contact.name = ''
 				this.contact.email = ''
 				this.contact.message = ''
