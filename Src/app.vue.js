@@ -1,14 +1,3 @@
-const routes = [
-  { path: '/', component: Home },
-  { path: '/about', component: About },
-  { path: '/skills', component: Skills },
-  { path: '/contacts', component: Contacts }
-]
-
-const router = new VueRouter({
-  routes
-})
-
 const app = new Vue({
 	router,
 	el: "#app",
