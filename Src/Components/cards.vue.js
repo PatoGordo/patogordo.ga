@@ -26,7 +26,7 @@ Vue.component('CardSkill', {
       
     }		
   },
-	props: ['imageSrc', 'alt', 'title', 'description', 'exemple'],
+	props: ['imageSrc', 'alt', 'title', 'description', 'exemple', 'obs'],
 	methods:{
 		
 	},
@@ -35,7 +35,7 @@ Vue.component('CardSkill', {
 			<img :src="imageSrc" :alt="alt" style="width:100%">
 			<h1>{{title}}</h1>
 			<p class="description-skill">{{description}}</p>
-			<a :href="exemple" target="_blank" rel="noopener noreferrer"><button class="button-card">Exemple project</button></a>
+			<a :href="exemple" target="_blank" rel="noopener noreferrer"><button class="button-card">Exemple project {{obs}}</button></a>
 		</div>
 	`
 })

@@ -55,6 +55,9 @@
   margin: 25px;
   text-align: center;
 	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .card-skill img{
 	border-top-left-radius: 15px;
@@ -82,4 +85,9 @@
 .button-card:hover {
   opacity: 0.7;
 	transition: all ease .3s;
+}
+@media screen and (max-width: 480px) {
+	.card-skill {
+		margin: 25px;
+	}
 }
