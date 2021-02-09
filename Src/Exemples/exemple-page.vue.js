@@ -12,7 +12,7 @@ Vue.component('Exemple', {
 	},
   template: `
 	<div class="Exemple">
-		<button v-on:click={ add() }>add {{ count }}</button>
+		<button v-on:click={add()}>add {{ count }}</button>
 	</div>
 	`
 })

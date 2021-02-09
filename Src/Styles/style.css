@@ -27,6 +27,12 @@
 	font-family: 'Montserrat', sans-serif;
 	list-style: none;
 	text-decoration: none;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+button, a, input, label{
 	user-select: none;
 	-webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -34,10 +40,6 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	-webkit-tap-highlight-color: transparent;
-}
-body{
-	width: 100%;
-	height: 100%;
 }
 #app{
 	width: 100%;
