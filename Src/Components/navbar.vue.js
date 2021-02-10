@@ -24,6 +24,7 @@ Vue.component('app-navbar', {
 				<label class="navbar-item"><router-link class="navbar-link" to="/">Home</router-link></label>
 				<label class="navbar-item"><router-link class="navbar-link" to="/about">About</router-link></label>
 				<label class="navbar-item"><router-link class="navbar-link" to="/skills">Skills</router-link></label>
+				<label class="navbar-item"><router-link class="navbar-link" to="/projects">Projects</router-link></label>
 				<label class="navbar-item"><router-link class="navbar-link" to="/contacts">Contacts</router-link></label>
 			</ul>
 		</nav>

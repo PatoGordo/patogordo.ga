@@ -3,6 +3,7 @@ const routes = [
   { path: '/about', component: About },
   { path: '/skills', component: Skills },
   { path: '/contacts', component: Contacts },
+  { path: '/projects', component: Projects },	
 
 
   { path: '*', component: Page404 }

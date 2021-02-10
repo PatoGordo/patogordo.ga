@@ -39,3 +39,28 @@ Vue.component('CardSkill', {
 		</div>
 	`
 })
+
+// Project Card (Projects)
+
+Vue.component('CardProject', {
+  data: function () {
+    return {
+      
+    }		
+  },
+	props: ['imageSrc', 'alt', 'title', 'description', 'source', 'exemple', 'obs'],
+	methods:{
+		
+	},
+  template: `
+		<a class="card-project" :href="exemple" target="_blank" rel="noopener noreferrer">
+			<div class="img-container">
+				<img :src="imageSrc" :alt="alt" style="width:100%;">
+				<p class="demo-subs">Click to see a demo</p>
+			</div>
+			<h1 class="project-title" style="align-self: flex-start; margin: 10px; color: #333">{{title}}</h1>
+			<p class="description-project">{{description}}</p>
+			<a :href="source" target="_blank" rel="noopener noreferrer"><button class="button-card">Source code {{obs}}</button></a>
+		</a>
+	`
+})

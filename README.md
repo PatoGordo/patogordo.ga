@@ -1,9 +1,9 @@
-# Welcome to Personal Website 👋
+# Welcome to my portfolio 👋
 ![Version](https://img.shields.io/badge/version-1.2-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![Twitter: Patogordoo](https://img.shields.io/twitter/follow/Patogordoo.svg?style=social)](https://twitter.com/Patogordoo)
 
-> This project is a Personal Site / Portfolio to show my history with web development. It was done using VueJs by cdn.
+> This is my portfolio, here I will show my history with web development.
 
 ### 🏠 [Homepage](https://patogordo.ga)
 
@@ -17,7 +17,7 @@ Start 'index.html' in your browser.
 
 👤 **PatoGordo**
 
-* Website: https://patogordo.ga
+* Website: [https://patogordo.ga](https://patogordo.ga)
 * Twitter: [@Patogordoo](https://twitter.com/Patogordoo)
 * Github: [@PatoGordo](https://github.com/PatoGordo)
 

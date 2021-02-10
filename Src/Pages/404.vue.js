@@ -1,4 +1,3 @@
-
 Vue.component('Page404', {
   data: function () {
     return {
