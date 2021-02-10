@@ -18,7 +18,7 @@ Vue.component('Skills', {
 			<CardSkill imageSrc="Src/Images/Stacks/ffvp.png" alt="FFVP Stack" title="FFVP" description="FFVP Stack is Firebase, Flask, VueJs and Python. It is becoming my main Stack, soon I will publish some project using this Stack." exemple="" />			
 			<CardSkill imageSrc="Src/Images/Stacks/fern.png" alt="FERN Stack" title="FERN" description="FERN Stack is Firebase, Express, ReactJs and NodeJs. Currently it's my main Stack, I've done several projects using this Stack." exemple="https://luxinhe-bot.ga/#/code" obs="(Pt-br)" />			
 		</div>	
-		<h2 style="margin-top: 20px; font-weight: 500;">Programming Languages</h2>	
+		<h2 style="margin-top: 20px; font-weight: 500;">Development languages</h2>	
 		<div class="skills-items">	
 			<CardSkill imageSrc="Src/Images/Languages/python.png" alt="Python" title="Python" description="I have a few months of experience with python, I developed some projects in Python, using pygame, flask and django, and I am learning task automation using Python and Robot." exemple="https://github.com/PatoGordo/contact-me-flask" />
 			<CardSkill imageSrc="Src/Images/Languages/javascript.png" alt="Javascript" title="Javascript" description="I have about 2 year of experience with JS, I've done several projects using JS, and continue to use it until today, JS is the programming language that I have the most experience with." exemple="https://github.com/PatoGordo/conversion-tools" />
