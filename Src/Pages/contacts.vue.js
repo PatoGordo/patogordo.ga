@@ -20,6 +20,22 @@ Vue.component('Contacts', {
 		sendMessage(){
 			this.contact.id =  '#'+Math.floor(1000 + Math.random() * 9000)
 			this.buttonState = true
+
+			//Send contact using EmailJS
+			emailjs.send('service_enfl7lo', 'template_a4eufer', this.contact)
+			.then((response) => {
+				console.log('Email sended with success')
+				console.log('SUCCESS!', response.status, response.text)
+			})
+			.catch((error) => {
+				console.log('Email not sended')
+				console.log('FAILED...', error)
+				setTimeout(() => {
+					console.clear()
+				}, 1500)
+			})
+
+			//Send contact using Firebase
 			contactRef.doc(this.contact.email + ' ' + this.contact.id).set(this.contact)
 			.then(() => {
 				this.contact.name = ''
@@ -31,7 +47,8 @@ Vue.component('Contacts', {
 				setTimeout(() => { 
 					this.returnMessageClass = 'warn'
 					this.returnMessage = 'Fill out the form below and click on "Send Contact"!'
-				}, 4000)
+					console.clear()
+				}, 2000)
 			})
 			.catch(() => {
 				this.buttonState = false
@@ -40,7 +57,7 @@ Vue.component('Contacts', {
 				setTimeout(() => { 
 					this.returnMessageClass = 'warn'
 					this.returnMessage = 'Fill out the form below and click on "Send Contact"!'
-				}, 4000)
+				}, 2000)
 			})
 		}
 	},
@@ -70,10 +87,10 @@ Vue.component('Contacts', {
 			<i class="fab fa-telegram"></i>
 			Contact me by Telegram
 		</a>
-		<a href="mailto:conversecomicaro@gmail.com?subject=Contact%20made%20by%20the%20contact%20form" class="contact-gmail">
+		<!--a href="mailto:conversecomicaro@gmail.com?subject=Contact%20made%20by%20the%20contact%20form" class="contact-gmail">
 			<ion-icon class="input-icon" name="mail-outline"></ion-icon>
 			Contact me by Gmail
-		</a>
+		</a-->
 	</div>
 	`
 })
