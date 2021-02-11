@@ -13,6 +13,7 @@
 	padding-left: 50px;
 	line-height: 80px;
 	font-weight: bold;
+	cursor: pointer;
 }
 .navbar .navbar-items{
 	float: right;
