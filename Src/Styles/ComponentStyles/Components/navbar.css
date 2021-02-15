@@ -73,6 +73,9 @@
 		text-align: center;
 		transition: all ease .5s;
 	}
+	.navbar-button-modal{
+		margin: 0 5px;
+	}
 	.navbar .navbar-items .navbar-item {
 		display: block;
 		margin: 50px 0;
