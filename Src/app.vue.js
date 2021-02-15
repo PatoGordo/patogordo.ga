@@ -4,6 +4,9 @@ const app = new Vue({
 	data: {
 
 	},
+	mounted(){
+		
+	},
 	template: `
 		<div id="app">
 			<app-navbar />

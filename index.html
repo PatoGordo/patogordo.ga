@@ -2,13 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
+		<!-- Width device control -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="Src/Images/duck.png" type="image/x-icon">
-		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="Src/Images/duck.svg" type="image/x-icon">
+		<!-- Page title -->
 		<title>PatoGordo</title>
 
 
-		<!-- Main Style -->
+		<!-- Theme control -->
+		<script>
+			var theme = ''
+			
+			if (localStorage.getItem('theme') !== null) {
+				theme = localStorage.getItem('theme')
+			} else {
+				localStorage.setItem('theme', 'light')
+				theme = localStorage.getItem('theme')
+			}
+			
+			var link = document.createElement('link') 
+			link.rel = 'stylesheet'
+			link.type = 'text/css'
+			link.href = `Src/Styles/ComponentStyles/Themes/${theme}.css`
+
+			document.getElementsByTagName('HEAD')[0].appendChild(link)
+		</script>
+
+		<!-- Page Style -->
     <link href="Src/Styles/style.css" rel="stylesheet" type="text/css" />
 
 
@@ -36,6 +57,7 @@
 		<script src="https://unpkg.com/vue-router"></script>
   </head>
   <body>
+		<!-- Here the components will be rendered -->
 		<div id="app"></div>
 
 

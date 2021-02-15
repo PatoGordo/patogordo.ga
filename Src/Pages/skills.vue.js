@@ -27,7 +27,7 @@ Vue.component('Skills', {
 		<h2 style="margin-top: 20px; font-weight: 500;">Frameworks</h2>
 		<div class="skills-items">
 			<CardSkill imageSrc="Src/Images/Frameworks/react.png" alt="ReactJs" title="ReactJs" description="I use ReactJs, in several projects of mine for me it is one of the most useful tools in the front-end, I am always learning and surprising myself more and more with ReactJs." exemple="https://github.com/PatoGordo/luxinhe-discord-bot-client" obs="(Pt-br)" />
-			<CardSkill imageSrc="Src/Images/Frameworks/vue.png" alt="VueJs" title="VueJS" description="I'm falling in love with Vue Js! I started learning Vue a while ago and I'm in love with Vue, I've done several projects including this site using Vue. I am always surprised by Vue and the ease he gives me to make websites." exemple="https://github.com/PatoGordo/patogordo.ga-vue" />
+			<CardSkill imageSrc="Src/Images/Frameworks/vue.png" alt="VueJs" title="VueJs" description="I'm falling in love with Vue Js! I started learning Vue a while ago and I'm in love with Vue, I've done several projects including this site using Vue. I am always surprised by Vue and the ease he gives me to make websites." exemple="https://github.com/PatoGordo/patogordo.ga-vue" />
 		</div>
 		<h2 style="margin-top: 20px; font-weight: 500;">Others</h2>
 		<div class="skills-items">

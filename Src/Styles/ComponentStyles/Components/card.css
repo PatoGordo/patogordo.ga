@@ -1,9 +1,7 @@
 .card{
-  color: black;
   text-decoration: none;
   margin: 20px;
   padding: 15px;
-  border: 1.5px solid #666;
   border-radius: 15px;
   width: 480px;
   min-height: 150px;
@@ -24,12 +22,6 @@
 	text-align: left;
   font-weight: 500;
 }
-.card:hover{
-  border: 1.5px solid rgba(2, 87, 199, 0.63);
-  color: rgba(2, 87, 199, 0.63);
-  transition: all ease .3s;
-}
-
 @media screen and (max-width: 960px) {
   .card{
     width: 360px;
@@ -50,7 +42,6 @@
 /* Card Skill */
 
 .card-skill {
-  box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: 25px;
   text-align: center;
@@ -64,7 +55,6 @@
 	border-top-right-radius: 15px;
 }
 .description-skill {
-  color: grey;
   font-size: 18px;
 	padding: 7px;
 }
@@ -73,8 +63,6 @@
   outline: 0;
   display: inline-block;
   padding: 8px;
-  color: white;
-  background-color: #000;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -102,7 +90,6 @@
 	justify-content: center;
 }
 .card-project {
-  box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 450px;
 	min-height: 420px;
   margin: 25px;
@@ -117,12 +104,10 @@
 }
 .demo-subs{
 	position: absolute;
-	background: #5C6BC0;
-	color: #fff;
 	border-top-right-radius: 10px; 
 	padding: 10px;
   font-size: 18px;
-	bottom: 5px;
+	bottom: 4px;
 }
 .card-project img{
 	border-top-left-radius: 15px;
@@ -131,7 +116,6 @@
 	object-fit: cover;
 }
 .description-project {
-  color: grey;
   font-size: 18px;
 	padding: 7px;
 	text-align: start;

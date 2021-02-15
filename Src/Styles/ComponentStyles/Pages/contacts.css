@@ -14,9 +14,9 @@
 .contact-telegram{ 
 	background: rgb(0, 136, 204);
 }
-.contact-gmail{
+/* .contact-gmail{
 	background: linear-gradient(90deg, rgba(66,133,244,1) 0%, rgba(187,0,27,1) 20%, rgba(226,56,49,1) 40%, rgba(249,177,9,1) 60%, rgba(52,168,83,1) 80%);
-}
+} */
 .contact-telegram i, .contact-gmail ion-icon{
 	margin-right: 5px;
 	font-size: 30px;

@@ -5,7 +5,7 @@ Vue.component('Home', {
     }
   },
 	created(){
-		document.title = this.title
+		document.title = this.title 
 	},
   template: `
 	<div class="div-component home">

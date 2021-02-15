@@ -32,7 +32,7 @@ Vue.component('CardSkill', {
 	},
   template: `
 		<div class="card-skill">
-			<img :src="imageSrc" :alt="alt" style="width:100%">
+			<img :src="imageSrc" :alt="alt" style="width:100%" class="card-skill-image">
 			<h1>{{title}}</h1>
 			<p class="description-skill">{{description}}</p>
 			<a :href="exemple" target="_blank" rel="noopener noreferrer"><button class="button-card">Exemple project {{obs}}</button></a>
@@ -58,7 +58,7 @@ Vue.component('CardProject', {
 				<img :src="imageSrc" :alt="alt" style="width:100%;">
 				<p class="demo-subs">Click to see a demo</p>
 			</div>
-			<h1 class="project-title" style="align-self: flex-start; margin: 10px; color: #333">{{title}}</h1>
+			<h1 class="project-title" style="align-self: flex-start; margin: 10px;">{{title}}</h1>
 			<p class="description-project">{{description}}</p>
 			<a :href="source" target="_blank" rel="noopener noreferrer"><button class="button-card">Source code {{obs}}</button></a>
 		</a>
