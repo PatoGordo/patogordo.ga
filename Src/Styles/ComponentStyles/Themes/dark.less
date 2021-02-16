@@ -1,0 +1,135 @@
+body{
+	color: #C9D1D9;
+	background: #0d1117;
+}
+
+/* Navbar dark theme */
+.navbar{	
+	background: #161b22;
+	.logo{
+		color: #fff;
+	}
+	.navbar-items .navbar-item .navbar-link{
+		color: #fff;
+		&:hover{
+			background: #21262d;
+		}
+	}
+	.navbar-button{
+		color: #fff;
+	}
+	@media screen and (max-width: 980px) {
+		.navbar-items{
+			background: #161b22
+		}
+		.navbar-items .navbar-item .navbar-link{
+			&:hover{
+				color: #21262d;
+			}
+		}
+	}
+}
+
+/* Cards */
+.button-card {
+	background-color: #21262d;
+	color: #fff;
+}
+
+/* Cards Home */
+.card{
+  color: #fff;
+  border: 1.5px solid #999;
+	&:hover{
+		border: 1.5px solid rgba(87, 160, 255, 0.405);
+		color: rgba(87, 160, 255, 0.405);
+	}
+}
+
+/* Card Skills */
+.card-skill {
+  box-shadow: 1px 4px 8px 0 rgba(123, 123, 123, 0.2);
+	.description-skill {
+		color: grey;
+	}
+	.card-skill-image {
+    background: #2a2e33;
+	}
+}
+
+/* Card Project */
+.card-project {
+  box-shadow: 1px 4px 8px 0 rgba(123, 123, 123, 0.2);
+	.demo-subs{
+		background: #5C6BC0;
+		color: #fff;
+	}
+	.project-title{
+		color: #f1f1f1;
+	}
+	.description-project {
+		color: grey;
+	}
+}
+
+/* Form component */
+.form{
+	border: 1px solid #919191;
+	.input-label{
+		border: 1px solid #919191;
+	}
+	.input-box{
+		color: #f9f9f9;
+	}
+	.form-submit{
+		color: #fff;
+		background: #21262d;
+		&:disabled{
+			background: rgba(33, 38, 45, .7);
+		}
+	}
+}
+
+/* Home footer */
+.footerItem{
+  color: #d9d9d9;
+}
+
+/* Header image */
+.headerItem{
+	&.image{
+  	background: #161b22;
+	}
+}
+
+/* Modal page to change theme */
+.navbar-button-modal{
+	background: #efefef;
+	color: #000;
+}
+.modal {
+  background-color: rgba(0,0,0,.4);
+	.modal-content{
+		background-color: #21262d;
+		border: 1px solid #888;
+		p{
+			color: #aaaaaa;
+		}
+		.close {
+			transition: all ease .3s;
+			color: #aaaaaa;
+			&:hover, &:focus{
+				transition: all ease .3s;
+  			color: tomato;
+			}
+		}
+	}
+}
+
+// 404 page
+.Page404{
+	a{
+		background-color: #21262d;
+		color: #fff;
+	}
+}
