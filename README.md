@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![Twitter: Patogordoo](https://img.shields.io/twitter/follow/Patogordoo.svg?style=social)](https://twitter.com/Patogordoo)
 
-> This is my portfolio, here I will show my history with web development.
+> This is my portfolio, here I will show to you my skills, projects, a piece of my history as web developer, among other things.
 
 ### 🏠 [Homepage](https://patogordo.ga)
 
