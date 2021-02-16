@@ -12,6 +12,10 @@
 ```sh
 Start 'index.html' in your browser.
 ```
+> ***Now the site uses Lessjs instead of CSS.***
+
+> If you would like to use the CSS version click on the link below.
+>[This version is made using CSS](https://github.com/PatoGordo/PatoGordo/tree/main/Old%20Releases) (_**This version will not receive new updates!**_)
 
 ## Author
 
