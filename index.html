@@ -9,6 +9,7 @@
 		<!-- Page title -->
 		<title>PatoGordo</title>
 
+
 		<!-- Theme control -->
 		<script>
 			var theme = 'light'
@@ -21,18 +22,15 @@
 			}
 			
 			var link = document.createElement('link') 
-			link.rel = 'stylesheet/less'
+			link.rel = 'stylesheet'
 			link.type = 'text/css'
-			link.href = `Src/Styles/ComponentStyles/Themes/${theme}.less`
+			link.href = `Src/Styles/ComponentStyles/Themes/${theme}.css`
 
 			document.getElementsByTagName('HEAD')[0].appendChild(link)
 		</script>
 
-		<!-- Less Styles -->
-		<link rel="stylesheet/less" type="text/css" href="Src/Styles/style.less" />
-
-		<!-- Less CDN -->
-		<script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+		<!-- Page Style -->
+    <link href="Src/Styles/style.css" rel="stylesheet" type="text/css" />
 
 
 		<!-- External Modules -->

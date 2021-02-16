@@ -1,0 +1,61 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+/* Component styles */
+@import url('ComponentStyles/Components/navbar.css');
+@import url('ComponentStyles/Components/form.css');
+@import url('ComponentStyles/Components/footer.css');
+@import url('ComponentStyles/Components/header.css');
+@import url('ComponentStyles/Components/card.css');
+@import url('ComponentStyles/Components/switchButton.css');
+@import url('ComponentStyles/Components/modal.css');
+
+
+/* Pages styles */
+@import url('ComponentStyles/Pages/home.css');
+@import url('ComponentStyles/Pages/skills.css');
+@import url('ComponentStyles/Pages/about.css');
+@import url('ComponentStyles/Pages/contacts.css');
+@import url('ComponentStyles/Pages/404.css');
+
+
+/* Preset */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Montserrat', sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+button, a, input, label{
+	user-select: none;
+	-webkit-touch-callout: none;
+  -webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+#app{
+	width: 100%;
+	height: 100%;
+}
+.div-component{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	margin-top: 80px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+textarea {
+  resize: none;
+}

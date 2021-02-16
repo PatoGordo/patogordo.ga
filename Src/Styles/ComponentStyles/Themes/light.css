@@ -1,0 +1,110 @@
+/* Navbar light theme */
+.navbar{	
+	background: linear-gradient(90deg, rgb(156, 29, 213) 0%, rgb(87, 92, 180) 100%);
+}
+.navbar .logo{
+	color: #fff;
+}
+.navbar .navbar-items .navbar-item .navbar-link{
+	color: #fff;
+}
+.navbar .navbar-items .navbar-item .navbar-link:hover{
+	background: rgba(121,134,203,0.5);
+}
+.navbar-button{
+	color: #fff;
+}
+
+@media screen and (max-width: 952px) {
+	.navbar .navbar-items{
+		background: linear-gradient(90deg, rgb(156, 29, 213) 0%, rgb(87, 92, 180) 100%);
+	}
+	.navbar .navbar-items .navbar-item .navbar-link:hover{
+		color: rgb(121,134,203)
+	}
+}
+
+/* Cards light theme */
+.card{
+  color: black;
+  border: 1.5px solid #666;
+}
+.card:hover{
+  border: 1.5px solid rgba(2, 87, 199, 0.63);
+  color: rgba(2, 87, 199, 0.63);
+  transition: all ease .3s;
+}
+/* Card Skill */
+.card-skill {
+  box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.description-skill {
+  color: grey;
+}
+.button-card {
+  background-color: #000;
+}
+/* Card Project ligth */
+.card-project {
+  box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.project-title{
+	color: #333;
+}
+.demo-subs{
+	background: #5C6BC0;
+	color: #fff;
+}
+.description-project {
+  color: grey;
+}
+
+/* Form component style light theme */
+.form{
+	border: 1px solid #919191;
+}
+.input-label{
+	border: 1px solid #919191;
+}
+.form-submit{
+	color: #fff;
+	background: rgb(149,117,205);
+}
+.form-submit:disabled{
+	background: rgba(149,117,205,0.7);
+}
+
+/* Home footer */
+.footerItem{
+  color: #333;
+}
+
+/* Header image */
+.headerItem.image{
+  background: rgb(179,157,219);
+}
+
+/* Modal page to change theme */
+
+.navbar-button-modal{
+	background: rgba(121,134,203,0.5);
+	color: #f9f9f9;
+}
+
+.modal {
+  background-color: rgba(0,0,0,.4) 
+}
+.modal-content {
+  background-color: #fefefe;
+  border: 1px solid #888;
+}
+.modal-content p {
+	color: #000;
+}
+.close {
+  color: #aaaaaa;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+}

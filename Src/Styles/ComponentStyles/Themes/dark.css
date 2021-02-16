@@ -1,0 +1,121 @@
+body{
+	color: #C9D1D9;
+	background: #0d1117;
+}
+
+/* Navbar dark theme */
+.navbar{	
+	background: #161b22;
+}
+.navbar .logo{
+	color: #fff;
+}
+.navbar .navbar-items .navbar-item .navbar-link{
+	color: #fff;
+}
+.navbar .navbar-items .navbar-item .navbar-link:hover{
+	background: #21262d;
+}
+.navbar-button{
+	color: #fff;
+}
+
+@media screen and (max-width: 952px) {
+	.navbar .navbar-items{
+		background: #161b22
+	}
+	.navbar .navbar-items .navbar-item .navbar-link:hover{
+		color: #21262d;
+	}
+}
+
+/* Cards light theme */
+.card{
+  color: #fff;
+  border: 1.5px solid #999;
+}
+.card:hover{
+  border: 1.5px solid rgba(87, 160, 255, 0.405);
+  color: rgba(87, 160, 255, 0.405);
+}
+/* Card Skill */
+.card-skill {
+  box-shadow: 1px 4px 8px 0 rgba(123, 123, 123, 0.2);
+}
+.description-skill {
+  color: grey;
+}
+.button-card {
+  background-color: #21262d;
+	color: #fff;
+}
+/* Card Project */
+.card-project {
+  box-shadow: 1px 4px 8px 0 rgba(123, 123, 123, 0.2);
+}
+.demo-subs{
+	background: #5C6BC0;
+	color: #fff;
+}
+.project-title{
+	color: #f1f1f1;
+}
+.description-project {
+  color: grey;
+}
+
+/* Form component style dark theme */
+.form{
+	border: 1px solid #919191;
+}
+.input-label{
+	border: 1px solid #919191;
+}
+.input-box{
+	color: #f9f9f9;
+}
+.form-submit{
+	color: #fff;
+	background: #21262d;
+}
+.form-submit:disabled{
+	background: rgba(33, 38, 45, .7);
+}
+.card-skill-image{
+	background: #24282e;
+}
+
+/* Home footer */
+.footerItem{
+  color: #d9d9d9;
+}
+
+/* Header image */
+.headerItem.image{
+  background: #161b22;
+}
+
+/* Modal page to change theme */
+
+.navbar-button-modal{
+	background: #efefef;
+	color: #000;
+}
+
+.modal {
+  background-color: rgba(0,0,0,.4) 
+}
+.modal-content {
+  background-color: #21262d;
+  border: 1px solid #888;
+}
+.modal-content p {
+	color: #aaaaaa;
+}
+.close {
+  color: #aaaaaa;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+}

@@ -1,0 +1,27 @@
+.Page404{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.Page404 h2{
+	margin: 160px 0 10px 0;
+	font-size: xx-large;
+}
+.Page404 p{
+	font-size: larger;
+}
+.Page404 a{
+	padding: 15px;
+	margin-top: 10px;
+	border: 0;
+	border-radius: 10px;
+	font-size: larger;
+	color: #fff;
+	background: rgb(149,117,205);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+}

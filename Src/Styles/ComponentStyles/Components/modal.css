@@ -1,0 +1,34 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.modal-content {
+  margin: auto;
+  padding: 20px;
+  width: 420px;
+	border-radius: 10px;
+}
+.modal-content p {
+	margin: 10px 0;
+}
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+	.modal-content{
+		width: 85%;
+	}
+}

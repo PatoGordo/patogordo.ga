@@ -1,0 +1,137 @@
+.card{
+  text-decoration: none;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  width: 480px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all ease .3s;
+}
+.cardItem.name{
+  font-weight: 500;
+	align-self: start;
+}
+.cardItem.description{
+  display: flex;
+  margin-top: 15px;
+  font-size: 20px;
+	align-self: start;
+	text-align: left;
+  font-weight: 500;
+}
+@media screen and (max-width: 960px) {
+  .card{
+    width: 360px;
+  }
+}
+@media screen and (max-width: 480px){
+  .card{
+    width: 320px;
+  }
+}
+@media screen and (max-width: 320px){
+  .card{
+    width: 100%;
+    align-self: center;
+  }
+}
+
+/* Card Skill */
+
+.card-skill {
+  max-width: 300px;
+  margin: 25px;
+  text-align: center;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.card-skill img{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+.description-skill {
+  font-size: 18px;
+	padding: 7px;
+}
+.button-card {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+	border-radius: 15px;
+	transition: all ease .3s;
+}
+.button-card:hover {
+  opacity: 0.7;
+	transition: all ease .3s;
+}
+@media screen and (max-width: 480px) {
+	.card-skill {
+		margin: 25px;
+	}
+}
+
+/* Card Project */
+
+.cards{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.card-project {
+  max-width: 450px;
+	min-height: 420px;
+  margin: 25px;
+  text-align: center;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.img-container{
+	position: relative;
+}
+.demo-subs{
+	position: absolute;
+	border-top-right-radius: 10px; 
+	padding: 10px;
+  font-size: 18px;
+	bottom: 4px;
+}
+.card-project img{
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	height: auto;
+	object-fit: cover;
+}
+.description-project {
+  font-size: 18px;
+	padding: 7px;
+	text-align: start;
+	margin: 10px;
+}
+
+@media screen and (max-width: 520px) {
+	.card-project{
+		max-width: 90%;
+	}
+	.project-title{
+		margin: 0;
+		font-size: x-large;
+	}
+	.demo-subs{
+		padding: 8px;
+		font-size: 16px;
+	}
+}

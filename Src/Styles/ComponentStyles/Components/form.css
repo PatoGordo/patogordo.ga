@@ -1,0 +1,81 @@
+.form{
+	width: 480px;
+	padding: 25px;
+	margin: 10px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.input-label{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 10px;
+	cursor: text;
+	width: 100%;
+}
+.input-icon{
+	margin-right: 5px;
+}
+.input-box{
+	border: 0;
+	background: none;
+	width: 100%;
+}
+.form-submit{
+	padding: 15px;
+	margin-top: 10px;
+	border: 0;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-self: start;
+	cursor: pointer;
+}
+.form-submit::after{
+	content: 'Send Contact';
+	margin-left: 5px;
+}
+.form-submit:disabled::after{
+	content: 'Sending...';
+	margin-left: 5px;
+}
+.form-submit:disabled{
+	cursor: not-allowed
+}
+.form-title{
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+.message-return{
+	border: 1px solid;
+	border-radius: 15px;
+	padding: 15px;
+	margin-bottom: 10px;
+	text-align: center;
+	width: 100%;
+}
+.warn{
+	color: rgb(255,167,38);
+	border-color: rgb(255,167,38);
+	background: rgba(255,167,38, .150)
+}
+.success{
+	color: rgb(0,230,118);
+	border-color: rgb(0,230,118);
+	background: rgba(0,230,118, .150)
+}
+.error{
+	color: rgb(229,57,53);
+	border-color: rgb(229,57,53);
+	background: rgba(229,57,53, .150)
+}
+@media screen and (max-width: 500px) {
+	.form{
+		width: 95%;
+	}
+}

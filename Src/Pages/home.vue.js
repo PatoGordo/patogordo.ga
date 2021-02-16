@@ -10,7 +10,7 @@ Vue.component('Home', {
   template: `
 	<div class="div-component home">
 		<div class="header">
-			<img class="headerItem image" src="Src/Images/duck.svg" />
+			<img class="headerItem image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Carrier.svg/800px-Carrier.svg.png" />
 			<h2 class="headerItem name">Pato Gordo</h2>
 			<p class="headerItem description">Hello, I am the Pato Gordo a beginner FullStack Web Developer.</p>
 		</div>
