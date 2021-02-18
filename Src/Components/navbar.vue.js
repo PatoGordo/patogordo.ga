@@ -13,7 +13,7 @@ Vue.component('app-navbar', {
 		},
 		goToHome(){
 			window.scrollTo({ top: 0, behavior: 'smooth' })
-			window.location.href = "/#/"
+			window.location.href = '/'
 		},
 		changeTheme(){
 			if(localStorage.getItem('theme') == 'light'){
@@ -46,7 +46,7 @@ Vue.component('app-navbar', {
 	},
   template: `
 		<nav class="navbar">
-			<label class="logo" @click="goToHome()">PatoGordo</label>
+			<label class="logo"><router-link to="/">PatoGordo</router-link></label>
 			<label class="navbar-button" @click="handleClick()">
 				<ion-icon :name="clicked ? 'close-outline' : 'menu-outline'"></ion-icon>
 			</label>
@@ -72,5 +72,3 @@ Vue.component('app-navbar', {
 		</nav>
 	`
 })
-
-/* */ 

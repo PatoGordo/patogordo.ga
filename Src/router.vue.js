@@ -1,14 +1,20 @@
 const routes = [
-  { path: '/', component: Home },
-  { path: '/about', component: About },
-  { path: '/skills', component: Skills },
-  { path: '/contacts', component: Contacts },
-  { path: '/projects', component: Projects },	
+  { path: '/', component: Home, name: 'home' },
+  { path: '/about', component: About, name: 'about' },
+  { path: '/skills', component: Skills, name: 'skills' },
+  { path: '/contacts', component: Contacts, name: 'contacts' },
+  { path: '/projects', component: Projects, name: 'projects' },
 
-
-  { path: '*', component: Page404 }
+  { path: '/*', component: Page404, name: '404' }
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+	mode: 'hash'
+	/*-----------*/
+	// ToDo
+	// I couldn't use mode: history,
+	// if you know how to make that please makes a PULL REQUEST.
+	// Thanks!
+	/*-----------*/
 })
