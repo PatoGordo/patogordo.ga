@@ -4,6 +4,7 @@ const routes = [
   { path: '/skills', component: Skills, name: 'skills' },
   { path: '/contacts', component: Contacts, name: 'contacts' },
   { path: '/projects', component: Projects, name: 'projects' },
+	{ path: '/feedback', component: Feedback, name: 'feedback' },
 
   { path: '/*', component: Page404, name: '404' }
 ]

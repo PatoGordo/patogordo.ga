@@ -10,4 +10,5 @@ const firebaseApp = firebase.initializeApp({
 	appId: "1:389441013936:web:18ac11dfd868ac2f9fd375"
 })
 let db = firebaseApp.firestore()
-let contactRef = db.collection("contacts")
+let contactRef = db.collection('contacts')
+let feedbackRef = db.collection('feedbacks')

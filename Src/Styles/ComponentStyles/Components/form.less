@@ -39,14 +39,24 @@
 		align-self: start;
 		cursor: pointer;
 		&::after{
-			content: 'Send Contact';
 			margin-left: 5px;
+		}
+		&.pt::after{
+			content: 'Enviar';			
+		}
+		&.en::after{
+			content: 'Send';
 		}
 		&:disabled{
 			cursor: not-allowed;
 			&::after{
-				content: 'Sending...';
 				margin-left: 5px;
+			}
+			&.pt::after{
+				content: 'Enviando...';
+			}
+			&.en::after{
+				content: 'Sending...';
 			}
 		}
 	}

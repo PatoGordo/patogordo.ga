@@ -3,7 +3,7 @@ Vue.component('Contacts', {
     return {
 			title: 'PatoGordo - Contacts',
 			buttonState: false,
-			returnMessage: 'Fill out the form below and click on "Send Contact"!',
+			returnMessage: 'Fill out the form below and click on "Send"!',
 			returnMessageClass: 'warn',
 			contact:{
 				name: '',
@@ -46,7 +46,7 @@ Vue.component('Contacts', {
 				this.returnMessageClass = 'success'
 				setTimeout(() => { 
 					this.returnMessageClass = 'warn'
-					this.returnMessage = 'Fill out the form below and click on "Send Contact"!'
+					this.returnMessage = 'Fill out the form below and click on "Send"!'
 					console.clear()
 				}, 2000)
 			})
@@ -56,7 +56,7 @@ Vue.component('Contacts', {
 				this.returnMessageClass = 'error'
 				setTimeout(() => { 
 					this.returnMessageClass = 'warn'
-					this.returnMessage = 'Fill out the form below and click on "Send Contact"!'
+					this.returnMessage = 'Fill out the form below and click on "Send"!'
 				}, 2000)
 			})
 		}
@@ -78,10 +78,11 @@ Vue.component('Contacts', {
 
 			<label class="input-label">
 				<ion-icon class="input-icon" name="chatbox-ellipses-outline" style="-webkit-transform: scaleX(-1); transform: scaleX(-1);"></ion-icon>
-				<textarea class="input-box" v-model="contact.message" cols="30" rows="7" placeholder="Your message..."></textarea>
+				<textarea class="input-box" v-model="contact.message" cols="30" rows="5" placeholder="Your message..."></textarea>
 			</label>
+			<small style="align-self: flex-start; text-align: left;">Or <router-link to="/feedback">Click here</router-link> to send a simple feedback.</small>
 
-			<button class="form-submit" :disabled="buttonState"><ion-icon name="send-outline"></ion-icon></button>
+			<button class="form-submit en" :disabled="buttonState"><ion-icon name="send-outline"></ion-icon></button>
 		</form>
 		<a href="https://t.me/PatoGordo" target="_blank" rel="noopener noreferrer" class="contact-telegram">
 			<i class="fab fa-telegram"></i>
