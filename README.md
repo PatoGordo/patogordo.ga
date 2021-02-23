@@ -29,7 +29,7 @@
 ## Usage :hammer_and_pick:
 
 ### Firebase configuration :gear:
-- Open the 'Src/Services/firebase.js' and place there your firebase app credentitals.
+- Open the 'Src/Services/firebase.js' and put there your firebase app credentitals.
 ```sh
   const firebaseApp = firebase.initializeApp({
     apiKey: "<Your-Firebase-ApiKey>",
@@ -55,15 +55,15 @@
   }
 ```
 ### EmailJs Configuration :gear:
-- Open the 'Src/Services/emailjs.js' and place your User Id
+- Open the 'Src/Services/emailjs.js' and put your User Id
 ```sh
   (function() {
     emailjs.init("<Your-UserId>")
   })()
 ```
-- Open your EmailJs Dashboard and create a new template
-- Create a template with your style, the email js will recive {{id}} {{email}} {{name}} {{message}} from the website.
-- Open the 'Src/Pages/contacts.vue.js' and in line 25 place your template configs
+- Open your EmailJs Dashboard and create a new template <br>
+&nbsp;&nbsp; - Create a template with your style, the email js will recive {{id}} {{email}} {{name}} {{message}} from the website. <br>
+- Open the 'Src/Pages/contacts.vue.js' and in line 25 put your template configs
 ```sh
   emailjs.send('<service-id>', '<template-id>', this.contact // contact to send)
 ```
