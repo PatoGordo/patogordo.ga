@@ -79,7 +79,7 @@
 
 ## Show your support :handshake:
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ if this project helped you!<br>
 Makes a [pull request](https://github.com/PatoGordo/patogordo.ga/pulls) adding new features or solving bugs. <br>
 Create a [Issue](https://github.com/PatoGordo/patogordo.ga/issues) if you don't want to implement the feature or fix the bug. <br>
 
