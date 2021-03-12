@@ -7,13 +7,16 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="Src/Images/duck.svg" type="image/x-icon">
 		<!-- Page title -->
-		<title>PatoGordo</title>
+		<title>Pato Gordo</title>
 
-		<!-- Theme control -->
-		<script src="Src/themecontrol.js"></script>
+		<!-- Themes & Languages Controlers -->
+		<script src="Src/themecontrol.js"></script>		
+		<script src="Src/languages.js"></script>
+
 
 		<!-- Less Styles -->
 		<link rel="stylesheet/less" type="text/css" href="Src/Styles/style.less" />
+
 
 		<!-- Less CDN -->
 		<script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
@@ -43,6 +46,8 @@
 		<script src="https://unpkg.com/vue-router"></script>
   </head>
   <body>
+		<!-- Set Theme -->
+		<script>document.body.classList.add(getTheme())</script>
 		<!-- Here the components will be rendered -->
 		<div id="app"></div>
 

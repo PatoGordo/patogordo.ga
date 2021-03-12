@@ -8,15 +8,15 @@ Vue.component('Home', {
 		document.title = this.title 
 	},
   template: `
-	<div class="div-component home">
+	<div class="div-component home" v-for="lang in languages">
 		<div class="header">
 			<img class="headerItem image" src="Src/Images/duck.svg" />
 			<h2 class="headerItem name">Pato Gordo</h2>
-			<p class="headerItem description">Hello, I am the Pato Gordo a beginner FullStack Web Developer.</p>
+			<p class="headerItem description">{{currentLanguage == 'pt-BR'? lang.pt.home.description : 'Hello, I am Pato Gordo a beginner FullStack Web Developer.'}}</p>
 		</div>
-		<Card name="My github" target="_blank" rel="noopener noreferrer" description="There are some repositories with my open source projects." redirect="https://github.com/PatoGordo" />
-		<Card name="My repl.it" target="_blank" rel="noopener noreferrer" description="I use this Web Code Editor to create and test my projects." redirect="https://repl.it/@PatoGordo/" />
-		<Card name="My skills" description="I'll show you tools, languages, frameworks and other things that I use in my projects." redirect="/#/skills" />
+		<Card :name="currentLanguage == 'pt-BR'? lang.pt.home.cards.first.title : 'My github'" target="_blank" rel="noopener noreferrer" :description="currentLanguage == 'pt-BR'? lang.pt.home.cards.first.description : 'There are some repositories with my open source projects.'" redirect="https://github.com/PatoGordo" />
+		<Card :name="currentLanguage == 'pt-BR'? lang.pt.home.cards.second.title : 'My repl.it'" target="_blank" rel="noopener noreferrer" :description="currentLanguage == 'pt-BR'? lang.pt.home.cards.second.description : 'I use this Web Code Editor to create and test my projects.'" redirect="https://repl.it/@PatoGordo/" />
+		<Card :name="currentLanguage == 'pt-BR'? lang.pt.home.cards.third.title : 'My skills'" :description="currentLanguage == 'pt-BR'? lang.pt.home.cards.third.description : 'I will show you tools, languages, frameworks and other things that I use in my projects.'" redirect="/#/skills" />
 		
 		<div class="footer">
 			<a href="https://github.com/PatoGordo" target="_blank" rel="noopener noreferrer" class="footerItem">
@@ -27,9 +27,6 @@ Vue.component('Home', {
 			</a>
 			<a href="https://t.me/PatoGordo" target="_blank" rel="noopener noreferrer" class="footerItem">
 				<i class="fab fa-telegram"></i>          
-			</a>
-			<a href="https://twitter.com/patogordoo" target="_blank" rel="noopener noreferrer" class="footerItem">
-				<i class="fab fa-twitter"></i>
 			</a>
 		</div>
 	</div>`

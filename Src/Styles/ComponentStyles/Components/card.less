@@ -78,11 +78,8 @@
 
 /* Card Project */
 .cards{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	.card-project {
 		max-width: 450px;
 		min-height: 418px;
@@ -114,6 +111,10 @@
 			text-align: start;
 			margin: 10px;
 		}
+		.project-title{
+			text-align: start;
+			align-self: start;
+		}
 		@media screen and (max-width: 520px) {
 			max-width: 90%;
 			.project-title{
@@ -125,5 +126,8 @@
 				font-size: 16px;
 			}
 		}
+	}
+	@media screen and (max-width: 580px) {
+		grid-template-columns: 1fr;
 	}
 }

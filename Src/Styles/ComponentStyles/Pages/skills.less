@@ -1,11 +1,8 @@
 .skills-items{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	justify-content: center;
-  padding: 10px 150px 10px 150px;
 	@media screen and (max-width: 480px) {
-		padding: 10px;
+		grid-template-columns: 1fr;
 	}
 }

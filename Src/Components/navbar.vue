@@ -16,18 +16,14 @@ Vue.component('app-navbar', {
 			window.location.href = '/'
 		},
 		changeTheme(){
-			if(localStorage.getItem('theme') == 'light'){
-				localStorage.setItem('theme', 'dark')
-				this.isDark = true
-				window.location.reload()
-			}else if(localStorage.getItem('theme') == 'dark'){
-				localStorage.setItem('theme', 'light')
+			if(localStorage.getItem('theme') == 'dark'){
+				localStorage.setItem('theme', 'default')
+				document.body.classList.toggle('dark')
 				this.isDark = false
-				window.location.reload()
 			}else{
-				localStorage.setItem('theme', 'light')
-				this.isDark = false
-				window.location.reload()
+				localStorage.setItem('theme', 'dark')
+				document.body.classList.toggle('dark')
+				this.isDark = true
 			}
 		},
 		openModal(){
@@ -46,17 +42,17 @@ Vue.component('app-navbar', {
 	},
   template: `
 		<nav class="navbar">
-			<label class="logo"><router-link to="/">PatoGordo</router-link></label>
+			<label class="logo"><router-link to="/">Pato Gordo</router-link></label>
 			<label class="navbar-button" @click="handleClick()">
 				<ion-icon :name="clicked ? 'close-outline' : 'menu-outline'"></ion-icon>
 			</label>
 			<ul @click="handleClick()" class="navbar-items":class="clicked ? 'active' : 'none'">
 				<label class="navbar-item"><router-link class="navbar-link" to="/">Home</router-link></label>
-				<label class="navbar-item"><router-link class="navbar-link" to="/about">About</router-link></label>
+				<label class="navbar-item"><router-link class="navbar-link" to="/about">{{currentLanguage == 'pt-BR'? 'Sobre' : 'About'}}</router-link></label>
 				<label class="navbar-item"><router-link class="navbar-link" to="/skills">Skills</router-link></label>
-				<label class="navbar-item"><router-link class="navbar-link" to="/projects">Projects</router-link></label>
-				<label class="navbar-item"><router-link class="navbar-link" to="/contacts">Contacts</router-link></label>
-				<button class="navbar-button-modal" @click="openModal()">Change theme</button>
+				<label class="navbar-item"><router-link class="navbar-link" to="/projects">{{currentLanguage == 'pt-BR'? 'Projetos' : 'Projects'}}</router-link></label>
+				<label class="navbar-item"><router-link class="navbar-link" to="/contacts">{{currentLanguage == 'pt-BR'? 'Contatos' : 'Contacts'}}</router-link></label>
+				<button class="navbar-button-modal" @click="openModal()">{{currentLanguage == 'pt-BR'? 'Trocar de tema' : 'Change theme'}}</button>
 			</ul>
 			<div id="myModal" class="modal" :style="modalState ? 'display: block;' : 'display: none;'" @click="closeModal()">
 				<div class="modal-content">

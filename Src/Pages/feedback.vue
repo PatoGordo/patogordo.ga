@@ -15,17 +15,14 @@ const Feedback = Vue.component('Feedback', {
   },
 	created(){
 		document.title = this.title
-		if(this.$route.query.lang == '' || this.$route.query.lang == null){
+		if(currentLanguage != 'pt-BR'){
 			this.lang = 'en'
-			console.log(this.lang)
-		}else if(this.$route.query.lang == 'pt'){
+		}else if(currentLanguage == 'pt-BR'){
 			this.lang = 'pt'
-			console.log(this.lang)
 		}else{
 			this.lang = 'en'
-			console.log(this.lang)
 		}
-
+		
 		if(this.lang == 'pt'){
 			this.returnMessage = 'Preencha os campos do formulario abaixo e clique em "Enviar"!'
 		}

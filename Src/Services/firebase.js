@@ -1,4 +1,4 @@
-// Please don't steal my credentials !!! Unfortunately it is impossible to use environment variables in Js vanilla 😞😥
+// Please don't steal my credentials !!! Unfortunately it is impossible to use variables and environment in Js vanilla 😞😥
 
 const firebaseApp = firebase.initializeApp({
 	apiKey: "AIzaSyAGgrAm4K626ssrKaiHBdP5Il1H1rPH6Po",
