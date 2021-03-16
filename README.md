@@ -30,7 +30,7 @@
 
 ### Firebase configuration :gear:
 - Open the 'Src/Services/firebase.js' and put there your firebase app credentitals.
-```sh
+```js
   const firebaseApp = firebase.initializeApp({
     apiKey: "<Your-Firebase-ApiKey>",
     authDomain: "<Your-Firebase-AuthDomain>",
@@ -42,7 +42,7 @@
   })
 ```
 - Change your firebase firestore rules
-```sh
+```js
   rules_version = '2';
   service cloud.firestore {
     match /databases/{database}/documents {
@@ -56,7 +56,7 @@
 ```
 ### EmailJs Configuration :gear:
 - Open the 'Src/Services/emailjs.js' and put your User Id
-```sh
+```js
   (function() {
     emailjs.init("<Your-UserId>")
   })()
@@ -64,7 +64,7 @@
 - Open your EmailJs Dashboard and create a new template <br>
 &nbsp;&nbsp; - Create a template with your style, the email js will recive {{id}} {{email}} {{name}} {{message}} from the website. <br>
 - Open the 'Src/Pages/contacts.vue.js' and in line 25 put your template configs
-```sh
+```js
   emailjs.send('<service-id>', '<template-id>', this.contact // contact to send)
 ```
  Click here to see [EmailJs Integration](https://dashboard.emailjs.com/admin/integration) docs
